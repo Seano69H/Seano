@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Wedding</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-pink-50 text-gray-800">
+  <!-- Hero Section -->
+  <section class="h-screen bg-cover bg-center flex flex-col justify-center items-center text-white" style="background-image: url('https://source.unsplash.com/1600x900/?wedding');">
+    <div class="bg-black bg-opacity-50 p-6 rounded-2xl">
+      <h1 class="text-5xl font-bold mb-4">Alex & Taylor</h1>
+      <p class="text-2xl">We’re getting married!</p>
+      <p class="mt-2">September 20, 2025 | Cape Town</p>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section class="py-16 px-8 text-center max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6">Our Story</h2>
+    <p class="text-lg leading-relaxed">
+      We first met in 2018 and instantly connected over coffee and laughter. Over the years,
+      our journey has been filled with love, adventures, and unforgettable memories.
+      We can’t wait to celebrate this next chapter of our story with you.
+    </p>
+  </section>
+
+  <!-- Event Details -->
+  <section class="py-16 bg-white px-8">
+    <h2 class="text-3xl font-bold text-center mb-6">Wedding Details</h2>
+    <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto text-center">
+      <div class="p-6 border rounded-2xl shadow">
+        <h3 class="text-xl font-semibold mb-2">Ceremony</h3>
+        <p>St. Mary’s Chapel<br>September 20, 2025<br>3:00 PM</p>
+      </div>
+      <div class="p-6 border rounded-2xl shadow">
+        <h3 class="text-xl font-semibold mb-2">Reception</h3>
+        <p>Grand Ballroom, Cape Town<br>September 20, 2025<br>6:00 PM</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP Form -->
+  <section class="py-16 px-8 bg-pink-100">
+    <h2 class="text-3xl font-bold text-center mb-6">RSVP</h2>
+    <!-- Formspree integration -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="max-w-lg mx-auto bg-white p-8 rounded-2xl shadow space-y-4">
+      <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border rounded" required>
+      <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border rounded" required>
+      <select name="attendance" class="w-full p-3 border rounded" required>
+        <option value="">Will you attend?</option>
+        <option value="yes">Yes, I’ll be there!</option>
+        <option value="no">Sorry, can’t make it.</option>
+      </select>
+      <textarea name="message" placeholder="Message (optional)" class="w-full p-3 border rounded"></textarea>
+      <button type="submit" class="bg-pink-600 text-white px-6 py-3 rounded-xl hover:bg-pink-700 w-full">Send RSVP</button>
+    </form>
+    <p class="text-center mt-4 text-sm text-gray-600">Powered by Formspree</p>
+  </section>
+
+  <!-- Gallery -->
+  <section class="py-16 px-8 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-6">Gallery</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+      <img src="https://source.unsplash.com/400x400/?couple" class="rounded-xl shadow" alt="Photo">
+      <img src="https://source.unsplash.com/401x400/?love" class="rounded-xl shadow" alt="Photo">
+      <img src="https://source.unsplash.com/402x400/?engagement" class="rounded-xl shadow" alt="Photo">
+      <img src="https://source.unsplash.com/403x400/?wedding" class="rounded-xl shadow" alt="Photo">
+    </div>
+  </section>
+
+  <!-- Registry / Contact -->
+  <section class="py-16 px-8 bg-pink-100 text-center">
+    <h2 class="text-3xl font-bold mb-6">Gifts & Contact</h2>
+    <p class="mb-4">Your presence at our wedding is the best gift we could ask for. If you would like to bless us with a gift, you can find our registry below.</p>
+    <a href="#" class="bg-pink-600 text-white px-6 py-3 rounded-xl hover:bg-pink-700">View Registry</a>
+    <p class="mt-6">Questions? Email us at <a href="mailto:alexandtaylor@example.com" class="underline text-pink-700">alexandtaylor@example.com</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center bg-pink-600 text-white">
+    <p>© 2025 Alex & Taylor’s Wedding. All rights reserved.</p>
+  </footer>
+</body>
+</html>
